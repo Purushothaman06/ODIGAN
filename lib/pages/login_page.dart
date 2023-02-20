@@ -16,7 +16,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.deepPurple[200],
       body: SafeArea(
         child: Center(
           child: Column(
@@ -25,12 +25,14 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 30),
 
               // logo
-              const Icon(
-                Icons.lock,
-                size: 100,
-              ),
+              // ignore: sized_box_for_whitespace
+              Container(
+                height: 50,
+                child: Image.asset('lib/icons/odigan.png'),
 
-              const SizedBox(height: 25),
+              ),
+            
+              const SizedBox(height: 35),
 
               // welcome back, you've been missed!
               Text(
@@ -50,7 +52,7 @@ class LoginPage extends StatelessWidget {
                 obscureText: false,
               ),
 
-              const SizedBox(height: 10),
+              const SizedBox(height: 15),
 
               // password textfield
               MyTextField(
@@ -59,7 +61,7 @@ class LoginPage extends StatelessWidget {
                 obscureText: true,
               ),
 
-              const SizedBox(height: 10),
+              const SizedBox(height: 15),
 
               // forgot password?
               Padding(
@@ -69,13 +71,16 @@ class LoginPage extends StatelessWidget {
                   children: [
                     Text(
                       'Forgot Password?',
-                      style: TextStyle(color: Colors.grey[600]),
+                      style: TextStyle(
+                        color: Colors.grey[600],
+                        fontSize: 16,
+                        ),
                     ),
                   ],
                 ),
               ),
 
-              const SizedBox(height: 20),
+              const SizedBox(height: 35),
 
               // sign in button
               MyButton(
@@ -99,7 +104,10 @@ class LoginPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 10.0),
                       child: Text(
                         'Or continue with',
-                        style: TextStyle(color: Colors.grey[700]),
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 16,
+                          ),
                       ),
                     ),
                     Expanded(
@@ -136,7 +144,10 @@ class LoginPage extends StatelessWidget {
                 children: [
                   Text(
                     'Not a member?',
-                    style: TextStyle(color: Colors.grey[700]),
+                    style: TextStyle(
+                      color: Colors.grey[700],
+                      fontSize: 16,
+                    ),
                   ),
                   const SizedBox(width: 4),
                   const Text(
@@ -144,6 +155,7 @@ class LoginPage extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.blue,
                       fontWeight: FontWeight.bold,
+                      fontSize: 16,
                     ),
                   ),
                 ],
