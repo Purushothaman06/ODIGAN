@@ -36,4 +36,4 @@ If you encounter any issues with the app, please try restarting the app or resta
 
 # Support
 
-For support, please email support@odigan.com or visit our website at [www.odigan.com].
+For support, please email support@odigan.com or visit our website at www.odigan.com.
