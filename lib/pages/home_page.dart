@@ -23,10 +23,12 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: const Center(
-          child: Text(
-        "LOGGED IN " ,
-        style: TextStyle(fontSize: 20),
-      )),
+      //     child: Text(
+      //   "LOGGED IN " ,
+      //   style: TextStyle(fontSize: 20),
+      // )
+      
+      ),
     );
   }
 }
